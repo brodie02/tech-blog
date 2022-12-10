@@ -13,6 +13,7 @@ html {
     background-color: var(--light);
 }
 
+/* Main */
 header {
     display: flex;
     flex-direction: column;
@@ -47,6 +48,7 @@ header nav a:hover {
     color: var(--dark);
 }
 
+/* Login and Sign Up */
 #login {
     display: flex;
     flex-direction: column;
