@@ -30,6 +30,15 @@ header nav {
     font-size: large;
 }
 
+header nav a {
+    text-decoration: none;
+    color: var(--light);
+}
+
+header nav a:hover {
+    color: white;
+}
+
 #title {
     padding: 0.5rem 1.3rem;
     border-radius: 0.5rem;
