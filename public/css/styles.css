@@ -49,13 +49,13 @@ header nav a:hover {
 }
 
 /* Login and Sign Up */
-#login {
+.card {
     display: flex;
     flex-direction: column;
     margin: 1.5rem 2.5rem;
 }
 
-#login div {
+.card div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,7 +66,7 @@ header nav a:hover {
     padding: 0.1rem 0.8rem;
 }
 
-#login form {
+.card form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,15 +74,15 @@ header nav a:hover {
     padding: 0.8rem;
 }
 
-#login form label {
+.card form label {
     padding-bottom: 0.4rem;
 }
 
-#login form input {
+.card form input {
     padding: 0.4rem;
 }
 
-#button {
+.button {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -100,7 +100,7 @@ header nav a:hover {
   touch-action: manipulation;
 }
 
-#button:hover {
+.button:hover {
   box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
   outline: 0;
 }
