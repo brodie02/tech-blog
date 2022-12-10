@@ -1,0 +1,27 @@
+[
+    {
+        "content": "No it actually sucks",
+        "user_id": "2",
+        "post_id": "1"
+    },
+    {
+        "content": "Well you're wrong",
+        "user_id": "1",
+        "post_id": "1"
+    },
+    {
+        "content": "Of course they're pretty good",
+        "user_id": "1",
+        "post_id": "2"
+    },
+    {
+        "content": "Yea it is awesome",
+        "user_id": "1",
+        "post_id": "3"
+    },
+    {
+        "content": "Oh yea it is",
+        "user_id": "2",
+        "post_id": "3"
+    }
+]
