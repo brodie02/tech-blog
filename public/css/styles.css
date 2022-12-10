@@ -48,7 +48,7 @@ header nav a:hover {
     color: var(--dark);
 }
 
-/* Login and Sign Up */
+/* Login, Sign Up, Dashboard */
 .card {
     display: flex;
     flex-direction: column;
@@ -103,4 +103,28 @@ header nav a:hover {
 .button:hover {
   box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
   outline: 0;
+}
+
+/* Dashboard Modal */
+
+#modal-button {
+    position: absolute; 
+    margin-left: -100px;
+    left: 50%;
+    width: 200px;
+    bottom: 20px;
+    font-size: 2rem;
+    background-color: var(--dark);
+}
+
+#buttons-modal {
+    background-color: var(--light);
+    border: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+#dashboard-modal {
+    display: none;
 }
