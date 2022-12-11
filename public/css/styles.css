@@ -129,3 +129,18 @@ header nav a:hover {
 #dashboard-modal {
     display: none;
 }
+
+/* Homepage Card */
+
+#card-title {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#card-body {
+    background-color: var(--light);
+    color: var(--dark);
+    padding: 1rem;
+    border-top: none;
+    
+}
