@@ -13,6 +13,10 @@ html {
     background-color: var(--light);
 }
 
+.none {
+    display: none;
+}
+
 /* Main */
 header {
     display: flex;
@@ -143,8 +147,4 @@ header nav a:hover {
     padding: 1rem;
     border-top: none;
     
-}
-
-.none {
-    display: none;
 }
