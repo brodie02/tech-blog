@@ -2,7 +2,7 @@
 <div class="card">
     <div id="card-title">
         <h3>{{post.title}}</h3>
-        <p>Posted by {{post.user.username}} on {{post.date_created}}</p>
+        <p>Posted by {{post.user.username}} on {{format_date post.date_created}}</p>
     </div>
     <div id="card-body">
         <p>{{post.content}}</p>
