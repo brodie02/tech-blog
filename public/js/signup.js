@@ -4,6 +4,11 @@ const signup = async (event) => {
     const username = document.querySelector('#user').value.trim();
     const password = document.querySelector('#pass').value.trim();
     
+    if (password.length < 8) {
+        document.getElementById('pass-err').style.display = 'block'
+        return
+    }
+
     if (username && password) {
       const response = await fetch('/api/users/signup', {
         method: 'POST',
