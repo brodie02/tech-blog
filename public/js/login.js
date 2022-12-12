@@ -3,6 +3,13 @@ const login = async (event) => {
   
     const username = document.querySelector('#user').value.trim();
     const password = document.querySelector('#pass').value.trim();
+
+    const errorMes = document.getElementById('pass-err')
+
+    if (!username || !password) {
+        errorMes.style.display = 'block'
+        errorMes.innerHTML = 'Inputs cannot be black'
+    }
   
     if (username && password) {
       const response = await fetch('/api/users/login', {
@@ -14,15 +21,16 @@ const login = async (event) => {
       if (response.ok) {
         document.location.replace('/dashboard');
       } else {
+
         if (response.statusText === 'Invalid username, please try again') {
-            document.getElementById('pass-err').style.display = 'block'
-            document.getElementById('pass-err').innerHTML = 'Invalid username, please try again'
+            errorMes.style.display = 'block'
+            errorMes.innerHTML = 'Invalid username, please try again'
         } else if (response.statusText === 'Incorrect password, please try again') {
-            document.getElementById('pass-err').style.display = 'block'
-            document.getElementById('pass-err').innerHTML = 'Incorrect password, please try again'
+            errorMes.style.display = 'block'
+            errorMes.innerHTML = 'Incorrect password, please try again'
         } else {
-            document.getElementById('pass-err').style.display = 'block'
-            document.getElementById('pass-err').innerHTML = 'Something went wrong, please try again'
+            errorMes.style.display = 'block'
+            errorMes.innerHTML = 'Something went wrong, please try again'
         }
 
       }
