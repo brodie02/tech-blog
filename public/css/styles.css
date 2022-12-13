@@ -176,6 +176,7 @@ header nav a:hover {
     padding: 0.8rem;
     border-radius: 0.4rem;
     font-size: 1.2rem;
+    text-decoration: none;
 }
 
 .post:hover {

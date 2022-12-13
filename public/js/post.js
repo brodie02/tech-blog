@@ -1,6 +1,5 @@
 const newPost = async (event) => {
     event.preventDefault();
-    console.log('bbrbr');
 
     const title = document.querySelector('#title-input').value.trim();
     const content = document.querySelector('#content').value.trim();

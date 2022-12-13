@@ -1,9 +1,9 @@
 <div id="post-holder">
     {{#each posts as |post|}}
-    <div class="post">
+    <a href="/post/{{post.id}}" class="post">
         <p>{{post.title}}</p>
         <p>{{format_date post.date_created}}</p>
-    </div>
+    </a>
     {{/each}}
 </div>
 
