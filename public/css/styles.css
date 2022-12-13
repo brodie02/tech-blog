@@ -130,11 +130,17 @@ header nav a:hover {
     gap: 1rem;
 }
 
-#dashboard-modal {
-    display: flex;
-    z-index: 1;
+#modal-container {
     position: relative;
-    top: -8.1rem;
+    margin-right: 5rem;
+}
+
+#dashboard-modal {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    top: -2rem;
     background-color: var(--light);
 }
 
