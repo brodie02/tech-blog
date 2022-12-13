@@ -131,7 +131,11 @@ header nav a:hover {
 }
 
 #dashboard-modal {
-    display: none;
+    display: flex;
+    z-index: 1;
+    position: relative;
+    top: -8.1rem;
+    background-color: var(--light);
 }
 
 /* Homepage Card */
@@ -146,5 +150,29 @@ header nav a:hover {
     color: var(--dark);
     padding: 1rem;
     border-top: none;
-    
+}
+
+/* Dashboard Posts */
+
+#post-holder {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin: 1.5rem 2.5rem;
+}
+
+.post {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #6E6D70;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    font-size: 1.2rem;
+}
+
+.post:hover {
+    background-color: #bab8be;
+    cursor: pointer;
 }
