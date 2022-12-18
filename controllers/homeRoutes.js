@@ -54,7 +54,7 @@ router.get('/post/:id', withAuth, async (req, res) => {
             }
         })
 
-        const posts = postData.map((post) => post.get({ plain: true }));
+        const posts = postData.get({ plain: true });
 
         const comments = commentData.map((comment) => comment.get({ plain: true }));
 
