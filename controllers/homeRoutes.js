@@ -32,10 +32,15 @@ router.get('/dashboard', withAuth, async (req, res) => {
             }
         });
 
+        const userData = await User.findByPk(req.session.user_id)
+
         const posts = postData.map((post) => post.get({ plain: true }));
+
+        const user = userData.get({ plain: true })
 
         res.render('dashboard', {
             posts,
+            user,
             logged_in: req.session.logged_in
         })
     } catch (error) {
@@ -54,7 +59,7 @@ router.get('/post/:id', withAuth, async (req, res) => {
             },
             include: [{ model: User }],
             order: [
-                ['id', 'DESC'],
+                ['id', 'ASC'],
             ],
         })
     
