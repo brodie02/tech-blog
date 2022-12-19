@@ -13,3 +13,17 @@
         </div>
     </form> 
 </div>
+
+<div class="card">
+    <div>
+        <h3>Comments</h3>
+    </div>
+    <div class="body">
+        {{#each comments as |comment|}}
+        <div class="comment">
+            <p>{{comment.content}}</p>
+            <p class="comment-user">- {{comment.user.username}}</p> 
+        </div>
+        {{/each}}
+    </div>
+</div>

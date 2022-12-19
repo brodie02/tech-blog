@@ -79,6 +79,19 @@ header nav a:hover {
     border-top: none;
 }
 
+.card .body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    border: 0.3rem solid black;
+    padding: 0.8rem;
+    border-top: none;
+    background-color: var(--light);
+    color: var(--dark);
+    gap: 0.8rem;
+}
+
 .card form label {
     padding-bottom: 0.4rem;
 }
@@ -182,4 +195,17 @@ header nav a:hover {
 .post:hover {
     background-color: #bab8be;
     cursor: pointer;
+}
+
+/* Comment Card  */
+
+.card .comment {
+    background-color: var(--light);
+    color: var(--dark);
+    display: flex;
+    padding: 0.5rem;
+}
+
+.comment-user {
+    align-self: flex-end;
 }
