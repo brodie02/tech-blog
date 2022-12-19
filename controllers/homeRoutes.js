@@ -52,13 +52,16 @@ router.get('/post/:id', withAuth, async (req, res) => {
             where: {
                 post_id: req.params.id
             },
-            include: [{ model: User }]
+            include: [{ model: User }],
+            order: [
+                ['id', 'DESC'],
+            ],
         })
     
         const posts = postData.get({ plain: true });
 
         const comments = commentData.map((comment) => comment.get({ plain: true }));
-        console.log(comments);
+
         res.render('post', {
             posts,
             comments,
