@@ -1,20 +1,24 @@
 [
     {
+        "id": 1,
         "content": "No it actually sucks",
         "user_id": "2",
         "post_id": "1"
     },
     {
+        "id": 2,
         "content": "Well you're wrong",
         "user_id": "1",
         "post_id": "1"
     },
     {
+        "id": 3,
         "content": "Of course they're pretty good",
         "user_id": "1",
         "post_id": "2"
     },
     {
+        "id": 4,
         "content": "Yea it is awesome",
         "user_id": "1",
         "post_id": "3"

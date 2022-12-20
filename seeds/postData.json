@@ -1,15 +1,18 @@
 [
     {
+        "id": 1,
         "title": "I love JavaScript",
         "content": "JavaScript is so amazing!",
         "user_id": "1"
     },
     {
+        "id": 2,
         "title": "Computers are pretty good",
         "content": "Computers are ok I guess",
         "user_id": "2"
     },
     {
+        "id": 3,
         "title": "Coding is awesome",
         "content": "Coding is the best",
         "user_id": "2"
