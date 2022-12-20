@@ -21,3 +21,16 @@
         {{/each}}
     </div>
 </div>
+
+{{#if logged_in}}
+<div class="card">
+    <div>
+        <h3>Add Comment</h3>
+    </div>
+    <form>
+        <label for="content">Content:</label>
+        <input type="text" name="content" id="content"><br>
+        <button class="button" role="button" id="add">Add</button>
+    </form> 
+</div>
+{{/if}}
