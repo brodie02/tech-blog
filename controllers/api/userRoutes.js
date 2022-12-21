@@ -5,6 +5,14 @@ const { User } = require('../../models');
 
 router.post('/signup', async (req, res) => {
     try {
+      const sameUser = await User.findOne({ where: { username: req.body.username}})
+
+      if (sameUser) {
+        res.statusMessage = "Username already exists, please try again";
+        res.status(400).end();
+        return;
+      }
+
       const userData = await User.create({
         username: req.body.username,
         password: req.body.password,

@@ -28,7 +28,13 @@ const signup = async (event) => {
       if (response.ok) {
         document.location.replace('/dashboard');
       } else {
-        console.log(response.statusText);
+        if (response.statusText === "Username already exists, please try again") {
+          errorMes.style.display = 'block'
+          errorMes.innerHTML = 'Username already exists, please try again'
+        } else {
+          errorMes.style.display = 'block'
+          errorMes.innerHTML = 'Something went wrong, please try again'
+        }
       }
     }
 };
