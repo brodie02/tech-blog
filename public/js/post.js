@@ -4,6 +4,13 @@ const newPost = async (event) => {
     const title = document.querySelector('#title-input').value.trim();
     const content = document.querySelector('#content').value.trim();
 
+    const errorMes = document.getElementById('pass-err')
+
+    if (!title || !content) {
+        errorMes.style.display = 'block'
+        errorMes.innerHTML = 'Inputs cannot be black'
+    }
+
     if (title && content) {
       const response = await fetch('/api/posts', {
         method: 'POST',
