@@ -69,7 +69,7 @@ npm start
 
 To access the website, click the link below. Sign up or login to the website to be able to add new posts and comment on other people's posts.
 
-link to webpage
+https://brodie-tech-blog.herokuapp.com/
 
 ![homepage](./public/images/homepage.png)
 ![login page](./public/images/login.png)
