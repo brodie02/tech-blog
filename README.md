@@ -23,13 +23,13 @@ This weeks challenge focused on creating a full stack tech blog. The website is 
 
 Below are instructions on how to install and use this application:
 
-```json
+```md
 npm install
 ```
 
 Create a .env file with the following content (your MySQL username and password)
 
-```json
+```md
 DB_NAME='blog_db'
 DB_USER=''
 DB_PASSWORD=''
@@ -37,31 +37,31 @@ DB_PASSWORD=''
 
 Login to your MySQL
 
-```json
+```md
 mysql -u root -p
 ```
 
 To create the database
 
-```json
+```md
 source db/schema.sql
 ```
 
 Exit MySQL
 
-```json
+```md
 quit
 ```
 
 To populate the database
 
-```json
+```md
 node seeds/seed.js
 ```
 
 Finally you can start the application
 
-```json
+```md
 npm start
 ```
 
